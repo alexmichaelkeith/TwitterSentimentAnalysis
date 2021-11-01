@@ -51,7 +51,7 @@ def main():
     tweetDataframe.to_csv('tweets.csv', index=False)
     sentimentDataframe.to_csv('tweets_sentiment.csv', index=False)
     graph(keywords)
-
+    print('done')
 
 if __name__ == "__main__":
     main()

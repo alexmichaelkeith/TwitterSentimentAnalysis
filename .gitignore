@@ -1,6 +1,6 @@
 *.csv
 *.png
 config.py
-env/
+venv/
 __pycache__/
 .idea/
