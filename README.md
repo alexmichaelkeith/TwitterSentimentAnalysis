@@ -11,7 +11,7 @@ Do not abuse this script for spamming or other illegal purposes.
 
      1.) Apply for a twitter developer account here https://developer.twitter.com/en/apply-for-access
      2.) Login to your account and copy and paste the consumer key, and the consumer secret key into the config.py file.
-     3.) Change the numberOfTweetsPerKeyword variable in config.py to whatever you would like. Default is 1000.
+     3.) Change the numberOfTweetsPerKeyword variable in config.py to whatever you would like. Default is 100.
      4.) Change the show_graph variable to True or False. The graph will be saved as a png regardless.
      5.) Change the keywords in keywords.txt to whatever you want.
      
