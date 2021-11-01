@@ -2,8 +2,7 @@
 
 Python - tweepy bot used to scrape data from twitter keywords,
 then uses machine learning to give each tweet a sentiment score from (-1,1).
-
-These tweets and setiment scores are saved as .csv files.
+     These tweets and setiment scores are saved as .csv files.
 This data is then transformed and saved as a matplotlib bar chart.
 Ensure your use case is permitted by twitter.
 Do not abuse this script for spamming or other illegal purposes.
