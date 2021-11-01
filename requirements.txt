@@ -1,0 +1,6 @@
+wheel
+setuptools
+tweepy
+textblob
+pandas
+matplotlib
