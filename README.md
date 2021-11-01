@@ -25,5 +25,5 @@ Do not abuse this script for spamming or other illegal purposes.
     # Enter the directory of the project and type in command line
     ------------------------------------->
     1.) sudo python TwitterSentimentAnalysis.py
-    2.) The tweets.csv, tweets_sentiment.csv, and the SentimentGraph.png file should be populated with all the twitter data that has been scraped
+    2.) The tweets.csv, tweets_sentiment.csv, and the SentimentGraph.png file should be populated.
     
