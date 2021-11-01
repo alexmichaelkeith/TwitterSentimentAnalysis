@@ -31,17 +31,6 @@ def search_tweets(keyword):
     return tweets, sentiment
 
 
-def main():
-    keywordsfile = open("keywords.txt", "r")
-    keywords = keywordsfile.readlines()
-    for keyword in keywords:
-        tweetDataframe[keyword], sentimentDataframe[keyword] = search_tweets(keyword)
-
-    tweetDataframe.to_csv('tweets.csv', index=False)
-    sentimentDataframe.to_csv('tweets_sentiment.csv', index=False)
-    graph(keywords)
-
-
 def graph(keywords):
     plt.figure('Sentiment Graph')
     plt.bar(keywords, sentimentDataframe.mean(numeric_only=None))
@@ -51,6 +40,17 @@ def graph(keywords):
     plt.savefig('SentimentGraph.png')
     if config.get_show_graph():
         plt.show()
+
+
+def main():
+    keywordsfile = open("keywords.txt", "r")
+    keywords = keywordsfile.readlines()
+    for keyword in keywords:
+        tweetDataframe[keyword], sentimentDataframe[keyword] = search_tweets(keyword)
+
+    tweetDataframe.to_csv('tweets.csv', index=False)
+    sentimentDataframe.to_csv('tweets_sentiment.csv', index=False)
+    graph(keywords)
 
 
 if __name__ == "__main__":
